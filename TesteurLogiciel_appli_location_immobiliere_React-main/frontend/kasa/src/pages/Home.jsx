@@ -5,8 +5,36 @@ import useProperties from '../hooks/useProperties'
 const Home = () => {
   const { properties, loading, error } = useProperties()
 
+  // Alias to match existing naming in the provided markup
+  const logements = properties
+  const PropertyCard = ({ id, title, cover }) => (
+    <Card property={{ id, title, cover }} />
+  )
+
   return (
     <div>
+      <div className="home">
+        {/* Hero Banner */}
+        <section className="hero">
+          <div className="hero__overlay" />
+          <p className="hero__tagline">Chez vous, partout et ailleurs</p>
+        </section>
+
+        {/* Grille de logements */}
+        <section className="listings">
+          <div className="listings__grid">
+            {logements.map((logement) => (
+              <PropertyCard
+                key={logement.id}
+                id={logement.id}
+                title={logement.title}
+                cover={logement.cover}
+              />
+            ))}
+          </div>
+        </section>
+      </div>
+
       <Banner title="Bienvenue sur Kasa" subtitle="Trouvez votre logement idéal" />
 
       <section className="container">

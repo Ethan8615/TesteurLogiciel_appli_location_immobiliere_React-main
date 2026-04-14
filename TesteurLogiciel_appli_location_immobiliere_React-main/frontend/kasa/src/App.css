@@ -17,6 +17,31 @@
   }
 
 }
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 50px 8px 50px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove nav horizontal margin on small screens (mobile) */
+@media (max-width: 768px) {
+  .nav {
+    margin: 0 !important;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
 .hero {
   position: relative;
 

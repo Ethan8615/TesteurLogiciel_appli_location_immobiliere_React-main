@@ -28,6 +28,12 @@ const Layout = () => {
       </main>
 
       <Footer />
+    <footer className="site-footer">
+      <div className="container">© {new Date().getFullYear()} Kasa - Tous droits réservés</div>
+    </footer>
+    <Footer/>
+
+
     </div>
   )
 }
