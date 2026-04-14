@@ -1,6 +1,6 @@
 import { Outlet, Link } from 'react-router-dom'
 import Footer from './components/Footer'
-import logoImg from './assets/hero.png'
+import logoImg from './assets/kasa_logo.svg'
 import './App.css'
 
 const Layout = () => {
