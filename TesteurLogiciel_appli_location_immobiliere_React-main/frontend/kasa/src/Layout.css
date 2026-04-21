@@ -42,12 +42,11 @@
 
 .nav-link:hover {
   color: var(--color-primary);
-}
-
-.nav-link.active {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
+
+
 
 /* ── Main ── */
 .main-content {

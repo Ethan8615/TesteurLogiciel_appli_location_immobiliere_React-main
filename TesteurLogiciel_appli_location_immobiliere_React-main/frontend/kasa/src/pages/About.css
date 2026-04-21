@@ -2,7 +2,7 @@
   margin: 0 40px 32px;
   height: 220px;
   border-radius: 24px;
-  background: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80')
+  background: url('src/assets/image_a_propos.jpg')
     center / cover no-repeat;
   filter: brightness(0.7);
 }

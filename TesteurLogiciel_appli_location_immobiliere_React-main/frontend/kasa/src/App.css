@@ -97,15 +97,26 @@
 
 /* Banner */
 .banner {
-  padding: 28px 0;
-  background: linear-gradient(180deg, #f5f7fb, #ffffff);
+  padding: 40px 0;
+  /* prefer the provided hero image; file in src/assets is named "image acceuil.jpg" currently */
+  background: linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0.1)), url('/src/assets/image%20acceuil.jpg') center/cover no-repeat;
+  border-radius: 20px;
   margin-bottom: 12px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 160px;
 }
 .banner h1 {
   margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
 }
 .muted {
-  color: #666;
+  color: rgba(255,255,255,0.9);
 }
 
 /* Cards grid */
