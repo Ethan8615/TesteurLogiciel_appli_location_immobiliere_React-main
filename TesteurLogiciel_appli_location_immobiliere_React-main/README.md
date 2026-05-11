@@ -12,3 +12,10 @@ With Docker run command
 To stop project run
 `docker-compose down`
 
+lancer le projet:
+
+`cd \TesteurLogiciel_appli_location_immobiliere_React-main\TesteurLogiciel_appli_location_immobiliere_React-main\frontend\kasa`
+
+puis:
+
+`npm run dev`

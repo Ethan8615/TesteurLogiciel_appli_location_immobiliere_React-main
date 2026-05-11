@@ -24,6 +24,13 @@
   align-items: center;
 }
 
+/* Logo image sizing */
+.logo-img {
+  height: 56px;
+  width: auto;
+  display: block;
+}
+
 .nav-list {
   display: flex;
   gap: 32px;
@@ -44,6 +51,20 @@
   color: var(--color-primary);
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+
+/* Mobile: reduce logo size and header padding for small screens */
+@media (max-width: 600px) {
+  .logo-img {
+    height: 34px;
+  }
+  .site-header {
+    padding: 0 12px;
+    height: 56px;
+  }
+  .nav-list {
+    gap: 16px;
+  }
 }
 
 

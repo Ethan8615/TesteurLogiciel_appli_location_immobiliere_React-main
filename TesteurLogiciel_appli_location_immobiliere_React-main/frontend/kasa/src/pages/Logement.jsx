@@ -1,5 +1,6 @@
 import { useParams, Navigate } from 'react-router-dom'
 import logements from '../data/logements'
+import Carousel from '../components/Carousel'
 import './Logement.css'
 
 /* Étoiles de notation */
@@ -34,17 +35,13 @@ const Logement = () => {
 
   if (!logement) return <Navigate to="/404" replace />
 
+  const images = (logement.pictures && logement.pictures.length > 0)
+    ? logement.pictures.slice(0, 4)
+    : [logement.cover]
+
   return (
     <div className="logement">
-      {/* Carrousel (simplifié : 1 image ici) */}
-      <div className="carousel">
-        <img
-          src={logement.cover}
-          alt={logement.title}
-          className="carousel__img"
-        />
-        <span className="carousel__count">1 / 1</span>
-      </div>
+      <Carousel images={images} alt={logement.title} />
 
       {/* Infos principales */}
       <div className="logement__top">

@@ -2,7 +2,13 @@ const logements = [
   {
     id: 'a6r0c',
     title: 'Appartement cozy Paris 11e',
-    cover: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600&q=80',
+    cover: 'https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=1200&q=80',
+    pictures: [
+      'https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=1200&q=80',
+      'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&q=80',
+  'https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=1200&q=80',
+      'https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1200&q=80'
+    ],
     tags: ['Appartement', 'Paris'],
     rating: '4',
     host: { name: 'Marius K', picture: '' },
@@ -12,7 +18,11 @@ const logements = [
   {
     id: 'b9f2d',
     title: 'Loft industriel Bordeaux',
-    cover: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&q=80',
+    cover: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80',
+    pictures: [
+      'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80',
+      'https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200&q=80'
+    ],
     tags: ['Loft', 'Bordeaux'],
     rating: '5',
     host: { name: 'Sophie D', picture: '' },
@@ -52,7 +62,12 @@ const logements = [
   {
     id: 'f5q9m',
     title: 'Villa bord de mer Nice',
-    cover: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&q=80',
+    cover: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    pictures: [
+      'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+      'https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?w=1200&q=80',
+      'https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200&q=80'
+    ],
     tags: ['Villa', 'Nice'],
     rating: '5',
     host: { name: 'Clara V', picture: '' },
