@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1779960131632" clover="3.2.0">
-  <project timestamp="1779960131632" name="All files">
+<coverage generated="1779960402232" clover="3.2.0">
+  <project timestamp="1779960402233" name="All files">
     <metrics statements="20" coveredstatements="20" conditionals="20" coveredconditionals="17" methods="10" coveredmethods="10" elements="50" coveredelements="47" complexity="0" loc="20" ncloc="20" packages="1" files="2" classes="2"/>
     <file name="Card.jsx" path="C:\Users\eporr\Documents\OpenClassroom\Projet_8\TesteurLogiciel_appli_location_immobiliere_React-main\TesteurLogiciel_appli_location_immobiliere_React-main\frontend\kasa\src\components\Card.jsx">
       <metrics statements="4" coveredstatements="4" conditionals="8" coveredconditionals="7" methods="1" coveredmethods="1"/>
