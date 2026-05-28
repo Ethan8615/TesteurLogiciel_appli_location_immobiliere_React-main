@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import { MemoryRouter } from 'react-router-dom'
-import Card from './Card'
+import Card from '../src/components/Card'
 
 describe('Card component', () => {
   it('should render nothing when no property is provided', () => {

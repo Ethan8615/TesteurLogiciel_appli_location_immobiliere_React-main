@@ -19,3 +19,7 @@ lancer le projet:
 puis:
 
 `npm run dev`
+
+lancer le test :
+
+`npm test -- --coverage`
