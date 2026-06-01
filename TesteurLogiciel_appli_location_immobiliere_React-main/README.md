@@ -7,7 +7,7 @@ You need Docker to launch the app API or you can use service installing nodejs o
 
 With Docker run command
 
-`docker-compose up -d`
+`npm run `
 
 To stop project run
 `docker-compose down`
@@ -15,6 +15,8 @@ To stop project run
 lancer le projet:
 
 `cd \TesteurLogiciel_appli_location_immobiliere_React-main\TesteurLogiciel_appli_location_immobiliere_React-main\frontend\kasa`
+
+cd Users\Documens\Openclassroom\Projet8\TesteurLogiciel_appli_location_immobiliere_React-main\TesteurLogiciel_appli_location_immobiliere_React-main
 
 puis:
 

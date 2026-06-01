@@ -1,5 +1,5 @@
 import { useParams, Navigate } from 'react-router-dom'
-import logements from '../data/logements'
+import useProperty from '../hooks/useProperty'
 import Carousel from '../components/Carousel'
 import './Logement.css'
 
@@ -31,9 +31,10 @@ const Collapse = ({ title, children }) => (
 
 const Logement = () => {
   const { id } = useParams()
-  const logement = logements.find((l) => l.id === id)
+  const { property: logement, loading, error } = useProperty(id)
 
-  if (!logement) return <Navigate to="/404" replace />
+  if (loading) return <div className="logement"><p>Chargement du logement...</p></div>
+  if (error || !logement) return <Navigate to="/404" replace />
 
   const images = (logement.pictures && logement.pictures.length > 0)
     ? logement.pictures.slice(0, 4)
