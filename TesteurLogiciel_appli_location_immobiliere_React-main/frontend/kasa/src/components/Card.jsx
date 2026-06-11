@@ -7,7 +7,7 @@ const Card = ({ property }) => {
 
   return (
     <article className="card">
-      <Link to={`/fiche/${id}`} className="card-link">
+      <Link to={`/logement/${id}`} className="card-link">
         {cover ? (
           <img src={cover} alt={title || 'Photo du logement'} className="card-cover" />
         ) : (

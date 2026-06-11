@@ -15,7 +15,7 @@ describe('Card component', () => {
       </MemoryRouter>
     )
 
-    expect(screen.getByRole('link')).toHaveAttribute('href', '/fiche/123')
+    expect(screen.getByRole('link')).toHaveAttribute('href', '/logement/123')
     expect(screen.getByRole('img', { name: 'Appartement cosy' })).toHaveAttribute('src', 'cover.jpg')
     expect(screen.getByText('Appartement cosy')).toBeInTheDocument()
     expect(screen.getByText('Lyon')).toBeInTheDocument()
@@ -28,7 +28,7 @@ describe('Card component', () => {
       </MemoryRouter>
     )
 
-    expect(screen.getByRole('link')).toHaveAttribute('href', '/fiche/456')
+    expect(screen.getByRole('link')).toHaveAttribute('href', '/logement/456')
     expect(screen.queryByRole('img')).toBeNull()
     expect(screen.getByText('Studio sans photo')).toBeInTheDocument()
     expect(screen.getByText('Paris')).toBeInTheDocument()
