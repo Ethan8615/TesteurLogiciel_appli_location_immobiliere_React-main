@@ -1,6 +1,7 @@
 import { useParams, Navigate } from 'react-router-dom'
 import useProperty from '../hooks/useProperty'
 import Carousel from '../components/Carousel'
+import Collapse from '../components/Collapse/Collapse'
 import './Logement.css'
 
 /* Étoiles de notation */
@@ -17,17 +18,6 @@ const Stars = ({ rating }) => {
     </div>
   )
 }
-
-/* Accordéon générique */
-const Collapse = ({ title, children }) => (
-  <details className="collapse">
-    <summary className="collapse__header">
-      <span>{title}</span>
-      <span className="collapse__icon">▾</span>
-    </summary>
-    <div className="collapse__body">{children}</div>
-  </details>
-)
 
 const Logement = () => {
   const { id } = useParams()
@@ -68,16 +58,17 @@ const Logement = () => {
 
       {/* Accordéons */}
       <div className="logement__collapses">
-        <Collapse title="Description">
-          <p>{logement.description}</p>
-        </Collapse>
-        <Collapse title="Équipements">
-          <ul className="equipment-list">
-            {logement.equipments.map((eq) => (
-              <li key={eq}>{eq}</li>
-            ))}
-          </ul>
-        </Collapse>
+        <Collapse title="Description" content={logement.description} />
+        <Collapse
+          title="Équipements"
+          content={(
+            <ul className="equipment-list">
+              {logement.equipments.map((eq) => (
+                <li key={eq}>{eq}</li>
+              ))}
+            </ul>
+          )}
+        />
       </div>
     </div>
   )
