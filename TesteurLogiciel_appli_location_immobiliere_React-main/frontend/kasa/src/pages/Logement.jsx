@@ -2,22 +2,8 @@ import { useParams, Navigate } from 'react-router-dom'
 import useProperty from '../hooks/useProperty'
 import Carousel from '../components/Carousel'
 import Collapse from '../components/Collapse/Collapse'
+import Rating from '../components/Rating/Rating'
 import './Logement.css'
-
-/* Étoiles de notation */
-const Stars = ({ rating }) => {
-  const total = 5
-  const filled = parseInt(rating, 10)
-  return (
-    <div className="stars" aria-label={`Note : ${filled} sur 5`}>
-      {Array.from({ length: total }, (_, i) => (
-        <span key={i} className={`star ${i < filled ? 'star--filled' : 'star--empty'}`}>
-          ★
-        </span>
-      ))}
-    </div>
-  )
-}
 
 const Logement = () => {
   const { id } = useParams()
@@ -52,7 +38,7 @@ const Logement = () => {
               {logement.host.name.charAt(0)}
             </div>
           </div>
-          <Stars rating={logement.rating} />
+          <Rating rating={logement.rating} />
         </div>
       </div>
 
@@ -75,3 +61,4 @@ const Logement = () => {
 }
 
 export default Logement
+

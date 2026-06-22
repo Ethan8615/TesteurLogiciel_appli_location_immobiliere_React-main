@@ -1,4 +1,6 @@
 import Collapse from '../components/Collapse/Collapse'
+import Banner from '../components/Banner/Banner'
+import imageAPropos from '../assets/image_a_propos.jpg'
 import './About.css'
 
 const aboutItems = [
@@ -27,7 +29,7 @@ const aboutItems = [
 const About = () => {
   return (
     <div className="about">
-      <section className="about__hero" />
+      <Banner backgroundImage={imageAPropos} />
 
       <div className="about__content">
         {aboutItems.map((item) => (
@@ -39,3 +41,4 @@ const About = () => {
 }
 
 export default About
+

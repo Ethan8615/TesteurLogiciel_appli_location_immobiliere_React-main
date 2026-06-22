@@ -1,5 +1,7 @@
 import PropertyCard from '../components/PropertyCard'
+import Banner from '../components/Banner/Banner'
 import useProperties from '../hooks/useProperties'
+import imageAccueil from '../assets/image_acceuil.jpg'
 import './Home.css'
 
 const Home = () => {
@@ -7,11 +9,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      {/* Hero Banner */}
-      <section className="hero">
-        <div className="hero__overlay" />
-        <p className="hero__tagline">Chez vous, partout et ailleurs</p>
-      </section>
+      <Banner backgroundImage={imageAccueil} text="Chez vous, partout et ailleurs" />
 
       <section className="listings">
         {loading && <p className="listings__status">Chargement des logements...</p>}
@@ -34,3 +32,4 @@ const Home = () => {
 }
 
 export default Home
+
