@@ -1,32 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1781205307854" clover="3.2.0">
-  <project timestamp="1781205307854" name="All files">
-    <metrics statements="20" coveredstatements="20" conditionals="20" coveredconditionals="17" methods="10" coveredmethods="10" elements="50" coveredelements="47" complexity="0" loc="20" ncloc="20" packages="1" files="2" classes="2"/>
-    <file name="Card.jsx" path="C:\Users\eporr\Documents\OpenClassroom\Projet_8\TesteurLogiciel_appli_location_immobiliere_React-main\TesteurLogiciel_appli_location_immobiliere_React-main\frontend\kasa\src\components\Card.jsx">
-      <metrics statements="4" coveredstatements="4" conditionals="8" coveredconditionals="7" methods="1" coveredmethods="1"/>
-      <line num="3" count="1" type="stmt"/>
-      <line num="4" count="4" type="cond" truecount="2" falsecount="0"/>
-      <line num="6" count="3" type="stmt"/>
-      <line num="8" count="3" type="stmt"/>
-    </file>
-    <file name="Carousel.jsx" path="C:\Users\eporr\Documents\OpenClassroom\Projet_8\TesteurLogiciel_appli_location_immobiliere_React-main\TesteurLogiciel_appli_location_immobiliere_React-main\frontend\kasa\src\components\Carousel.jsx">
-      <metrics statements="16" coveredstatements="16" conditionals="12" coveredconditionals="10" methods="9" coveredmethods="9"/>
-      <line num="4" count="1" type="cond" truecount="0" falsecount="2"/>
-      <line num="5" count="16" type="stmt"/>
-      <line num="6" count="16" type="stmt"/>
-      <line num="8" count="16" type="stmt"/>
-      <line num="9" count="7" type="stmt"/>
-      <line num="12" count="16" type="stmt"/>
-      <line num="13" count="13" type="stmt"/>
-      <line num="14" count="4" type="cond" truecount="2" falsecount="0"/>
-      <line num="15" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="16" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="18" count="13" type="stmt"/>
-      <line num="19" count="13" type="stmt"/>
-      <line num="22" count="16" type="stmt"/>
-      <line num="23" count="16" type="stmt"/>
-      <line num="25" count="16" type="cond" truecount="2" falsecount="0"/>
-      <line num="27" count="15" type="stmt"/>
-    </file>
+<coverage generated="1782125083568" clover="3.2.0">
+  <project timestamp="1782125083568" name="All files">
+    <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="0" coveredelements="0" complexity="0" loc="0" ncloc="0" packages="0" files="0" classes="0"/>
   </project>
 </coverage>
