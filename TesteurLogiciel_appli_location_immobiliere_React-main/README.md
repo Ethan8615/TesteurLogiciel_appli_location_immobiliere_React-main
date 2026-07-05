@@ -16,9 +16,15 @@ lancer le projet:
 
 `cd \TesteurLogiciel_appli_location_immobiliere_React-main\TesteurLogiciel_appli_location_immobiliere_React-main\frontend\kasa`
 
+Lancer le Backend
+
+`npm start`
+
 cd Users\Documens\Openclassroom\Projet8\TesteurLogiciel_appli_location_immobiliere_React-main\TesteurLogiciel_appli_location_immobiliere_React-main
 
-puis:
+
+C:\Users\eporr\Documents\OpenClassroom\Projet_8\TesteurLogiciel_appli_location_immobiliere_React-main\TesteurLogiciel_appli_location_immobiliere_React-main\frontend\kasa
+puis sur un autre Terminal pour le frontend:
 
 `npm run dev`
 
