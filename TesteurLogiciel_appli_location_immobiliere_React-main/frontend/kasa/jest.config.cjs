@@ -18,7 +18,7 @@ module.exports = {
       lines: 80,
       statements: 80,
     },
-    './src/components/Card.jsx': {
+    './src/components/PropertyCard.jsx': {
       branches: 80,
       functions: 80,
       lines: 80,

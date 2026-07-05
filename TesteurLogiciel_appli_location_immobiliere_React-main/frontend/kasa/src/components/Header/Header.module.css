@@ -45,9 +45,7 @@
   text-underline-offset: 4px;
 }
 
-.navLinkActive {
-  color: var(--color-primary);
-}
+
 
 @media (max-width: 600px) {
   .logoImg {
