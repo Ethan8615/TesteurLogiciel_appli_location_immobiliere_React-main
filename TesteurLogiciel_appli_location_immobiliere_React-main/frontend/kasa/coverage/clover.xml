@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1783272891007" clover="3.2.0">
-  <project timestamp="1783272891007" name="All files">
+<coverage generated="1785702451995" clover="3.2.0">
+  <project timestamp="1785702451995" name="All files">
     <metrics statements="18" coveredstatements="18" conditionals="12" coveredconditionals="12" methods="10" coveredmethods="10" elements="40" coveredelements="40" complexity="0" loc="18" ncloc="18" packages="1" files="2" classes="2"/>
     <file name="Carousel.jsx" path="C:\Users\eporr\Documents\OpenClassroom\Projet_8\TesteurLogiciel_appli_location_immobiliere_React-main\TesteurLogiciel_appli_location_immobiliere_React-main\frontend\kasa\src\components\Carousel.jsx">
       <metrics statements="16" coveredstatements="16" conditionals="12" coveredconditionals="12" methods="9" coveredmethods="9"/>

@@ -13,7 +13,7 @@ const Logement = () => {
   if (error || !logement) return <Navigate to="/404" replace />
 
   const images = (logement.pictures && logement.pictures.length > 0)
-    ? logement.pictures.slice(0, 4)
+    ? logement.pictures.map((picture) => picture)
     : [logement.cover]
 
   return (

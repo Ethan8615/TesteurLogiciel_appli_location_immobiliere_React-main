@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import PropTypes from 'prop-types'
-import { FiChevronDown } from 'react-icons/fi'
+import ChevronIcon from '../icons/ChevronIcon'
 import styles from './Collapse.module.css'
 
 const Collapse = ({ title, content }) => {
@@ -15,9 +14,9 @@ const Collapse = ({ title, content }) => {
         aria-expanded={isOpen}
       >
         <span className={styles.title}>{title}</span>
-        <FiChevronDown
+        <ChevronIcon
           className={`${styles.arrow} ${isOpen ? styles.arrowOpen : ''}`}
-          aria-hidden="true"
+          ariaHidden
         />
       </button>
 
@@ -26,11 +25,6 @@ const Collapse = ({ title, content }) => {
       </div>
     </article>
   )
-}
-
-Collapse.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
 }
 
 export default Collapse
