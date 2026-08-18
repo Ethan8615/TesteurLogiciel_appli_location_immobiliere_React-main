@@ -1,4 +1,4 @@
-import PropertyCard from '../components/PropertyCard'
+import PropertyCard from '../components/PropertyCard/PropertyCard'
 import Banner from '../components/Banner/Banner'
 import useProperties from '../hooks/useProperties'
 import imageAccueil from '../assets/image_acceuil.jpg'

@@ -1,6 +1,6 @@
 import { useParams, Navigate } from 'react-router-dom'
 import useProperty from '../hooks/useProperty'
-import Carousel from '../components/Carousel'
+import Carousel from '../components/Carousel/Carousel'
 import Collapse from '../components/Collapse/Collapse'
 import Rating from '../components/Rating/Rating'
 import './Logement.css'
