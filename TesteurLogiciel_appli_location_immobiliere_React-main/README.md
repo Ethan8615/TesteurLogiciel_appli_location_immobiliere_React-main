@@ -1,27 +1,57 @@
-# Kasa API
+# Kasa — Application de location immobilière
 
-## Prerequisites
-You need Docker to launch the app API or you can use service installing nodejs on your system and running in backend forlder the following commandes: `npm install` then `npm start`
 
-## Launch Project
+## Structure du projet
 
-With Docker run command
+```
+├── backend/            # API Express (port 8080)
+│   ├── app.js          # Définition des routes
+│   ├── server.js       # Démarrage du serveur
+│   └── data.json       # Données des logements
+├── frontend/kasa/      # Application React (Vite)
+│   └── src/            # Code source du frontend
+├── docker-compose.yaml # Orchestration de l'API
+└── README.md
+```
 
-`npm run `
 
-To stop project run
-`docker-compose down`
+### 1. Lancer le backend (API)
 
-lancer le projet:
+Dans un terminal, depuis la racine du projet :
 
-`cd \TesteurLogiciel_appli_location_immobiliere_React-main\TesteurLogiciel_appli_location_immobiliere_React-main\frontend\kasa`
+```bash
+cd backend
+npm install
+npm start
+```
 
-cd Users\Documens\Openclassroom\Projet8\TesteurLogiciel_appli_location_immobiliere_React-main\TesteurLogiciel_appli_location_immobiliere_React-main
+L'API tourne sur **http://localhost:8080**.
 
-puis:
+### 2. Lancer le frontend (React/Vite)
 
-`npm run dev`
+Dans un **second terminal**, toujours depuis la racine du projet :
 
-lancer le test :
+```bash
+cd frontend/kasa
+npm install
+npm run dev
+```
 
-`npm test -- --coverage`
+Le frontend est accessible sur **http://localhost:5173** (le proxy Vite redirige
+les appels `/api` vers le backend sur le port 8080).
+
+
+## Tests
+
+Dans le dossier `frontend/kasa` :
+
+```bash
+npm test
+```
+
+Avec couverture de code :
+
+```bash
+npm run test:coverage
+```
+

@@ -35,7 +35,11 @@ const Logement = () => {
           <div className="host__info">
             <span className="host__name">{logement.host.name}</span>
             <div className="host__avatar">
-              {logement.host.name.charAt(0)}
+              {logement.host.picture ? (
+              <img src={logement.host.picture} alt={logement.host.name} />
+                ) : (
+                logement.host.name.charAt(0)
+                )}
             </div>
           </div>
           <Rating rating={logement.rating} />
